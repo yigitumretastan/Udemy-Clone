@@ -121,3 +121,79 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ├─ next.config.js
 ├─ tsconfig.json
 └─ package.json
+
+
+
+
+
+
+
+
+
+```
+udemy-clone/
+│
+├── public/
+│   ├── images/             # Kurs resimleri, banner, vs.
+│   └── favicon.ico
+│
+├── src/
+│   ├── app/
+│   │   ├── _components/    # Page özel küçük component'lar
+│   │   ├── layout.tsx       # Global layout (Navbar + Footer)
+│   │   ├── page.tsx         # Ana sayfa (kurs listesi)
+│   │   ├── course/
+│   │   │   ├── [id]/        # Dinamik kurs detay sayfası
+│   │   │   │   └── page.tsx
+│   │   │   └── create/      # Kurs oluşturma sayfası (opsiyonel)
+│   │   │       └── page.tsx
+│   │   ├── about/
+│   │   │   └── page.tsx
+│   │   └── contact/
+│   │       └── page.tsx
+│   │
+│   ├── api/
+│   │   ├── auth/
+│   │   │   └── [...nextauth]/route.ts
+│   │   └── courses/         # Kurs CRUD API route
+│   │       └── route.ts
+│   │
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── Button.tsx
+│   │   │   ├── Card.tsx
+│   │   │   └── Loader.tsx
+│   │   ├── header/
+│   │   │   ├── Navbar.tsx
+│   │   │   └── AuthButtons.tsx
+│   │   └── footer/
+│   │       └── Footer.tsx
+│   │
+│   ├── lib/
+│   │   └── providers/
+│   │       ├── NextAuthSessionProvider.tsx
+│   │       └── ReduxProvider.tsx
+│   │
+│   ├── server/
+│   │   └── auth.ts
+│   │
+│   ├── store/
+│   │   ├── index.ts
+│   │   └── hooks.ts
+│   │
+│   ├── types/
+│   │   └── course.d.ts
+│   │
+│   ├── utils/
+│   │   └── formatDate.ts
+│   │
+│   └── validations/
+│       └── auth.ts
+│
+├── .gitignore
+├── next.config.ts
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── README.md
+```
